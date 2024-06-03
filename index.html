@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro CV</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #32CD32;
+        }
+
+        .screen {
+            background-color: #006400;
+            border: 2px solid #32CD32;
+            padding: 20px;
+            width: 320px;
+            box-shadow: 0 0 20px #32CD32;
+        }
+
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #32CD32;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        .section-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section-content li {
+            background-color: #32CD32;
+            color: #006400;
+            padding: 5px;
+            margin: 3px 0;
+            border-radius: 5px;
+        }
+
+        .section-content li:hover {
+            background-color: #006400;
+            color: #32CD32;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            <h1>Your Name</h1>
+        </div>
+        <img src="profile-pic-placeholder.png" alt="Profile Picture" class="profile-pic">
+        <div class="content">
+            <div class="section">
+                <div class="section-title">Contact Information</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Email: you@example.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 1234 Street Name, City, State</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Experience</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Job Title at Company Name</li>
+                        <li>Job Title at Company Name</li>
+                        <li>Job Title at Company Name</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Degree at Institution Name</li>
+                        <li>Degree at Institution Name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 Your Name</p>
+        </div>
+    </div>
+</body>
+</html>
