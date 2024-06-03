@@ -20,8 +20,12 @@
             background-color: #006400;
             border: 2px solid #32CD32;
             padding: 20px;
-            width: 320px;
+            width: 90%;
+            max-width: 320px;
             box-shadow: 0 0 20px #32CD32;
+            box-sizing: border-box;
+            overflow-y: auto;
+            height: 90vh;
         }
 
         .header, .footer {
@@ -36,6 +40,8 @@
             height: 100px;
             border-radius: 50%;
             background-color: #32CD32;
+            background-image: url('profile.png');
+            background-size: cover;
         }
 
         .content {
@@ -68,47 +74,185 @@
             background-color: #006400;
             color: #32CD32;
         }
+
+        @media (max-width: 600px) {
+            .screen {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+
+            .section-content li {
+                padding: 4px;
+            }
+
+            .footer p {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .screen {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.2em;
+            }
+
+            .profile-pic {
+                width: 60px;
+                height: 60px;
+            }
+
+            .section-content li {
+                padding: 3px;
+            }
+
+            .footer p {
+                font-size: 0.7em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="screen">
         <div class="header">
-            <h1>Your Name</h1>
+            <h1>Tobias Grossmann</h1>
+            <p>Diplom Wirtschaftsinformatiker (FH)<br>Bachelor of Science (BSc)</p>
+            <p>Senior Managing Consultant</p>
         </div>
-        <img src="profile-pic-placeholder.png" alt="Profile Picture" class="profile-pic">
+        <div class="profile-pic"></div>
         <div class="content">
             <div class="section">
-                <div class="section-title">Contact Information</div>
+                <div class="section-title">Beratungsschwerpunkte</div>
                 <div class="section-content">
                     <ul>
-                        <li>Email: you@example.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Address: 1234 Street Name, City, State</li>
+                        <li>IT-Sicherheit und IT-Governance</li>
+                        <li>Datawarehouse Architektur und Governance</li>
+                        <li>Softwareentwicklung und IT-Architektur</li>
+                        <li>Cloud-Architekturen</li>
+                        <li>CI/CD continuous integration and continuous delivery/deployment</li>
+                        <li>ScrumMaster</li>
                     </ul>
                 </div>
             </div>
             <div class="section">
-                <div class="section-title">Experience</div>
+                <div class="section-title">Branchenkompetenz</div>
                 <div class="section-content">
                     <ul>
-                        <li>Job Title at Company Name</li>
-                        <li>Job Title at Company Name</li>
-                        <li>Job Title at Company Name</li>
+                        <li>Banken & Versicherungen</li>
+                        <li>Öffentlicher Sektor</li>
+                        <li>Gesundheitswesen</li>
                     </ul>
                 </div>
             </div>
             <div class="section">
-                <div class="section-title">Education</div>
+                <div class="section-title">Beruflicher Werdegang</div>
                 <div class="section-content">
                     <ul>
-                        <li>Degree at Institution Name</li>
-                        <li>Degree at Institution Name</li>
+                        <li>01/2020 – Heute Senior Managing Consultant Q_PERIOR</li>
+                        <li>05/2017 – 12/2019 IT-Architekt – DWH IT Governance Helsana Versicherungen AG</li>
+                        <li>08/2012 – 04/2017 Managing Consultant Q_PERIOR</li>
+                        <li>09/2011 – 08/2012 Senior Consultant CGI</li>
+                        <li>06/2009 – 08/2011 Chief Security Officer (CSO) SwissSign AG (Schweizer Post Tochter)</li>
+                        <li>06/2007 – 05/2009 Consultant Q_PERIOR</li>
                     </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Zertifizierungen</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Certified ScrumMaster</li>
+                        <li>Zertifizierter ISO27001 Auditor (IT-Betriebs-Sicherheitsmanagement)</li>
+                        <li>ITIL IT Service Management</li>
+                        <li>Azure AI Fundamentals AI-900, I794-28</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">IT-Kompetenz</div>
+                <div class="section-content">
+                    <ul>
+                        <li>ETL Werkzeuge: Wherescape Red & 3d / Oracle ODI</li>
+                        <li>Analyse & Reporting: SAS Enterprise Guide, PowerBI & QlikView</li>
+                        <li>Relationale Datenbanken (MySQL, MSSQL, Oracle, Teradata)</li>
+                        <li>Datawarehouse Architektur Beladung & Reporting (Wherescape Red & 3d / Oracle ODI, Microsoft Azure Data Factory, SAS, Qlik, PowerBI)</li>
+                        <li>NoSQL Datenbanken, Non-Blocking I/O Services, Hadoop, RabbitMQ, SAP HANA, EXASOL</li>
+                        <li>SAP HANA Native Entwicklung (Integration/SQL Command Network Protocol/XS Engine)</li>
+                        <li>Microsoft Azure Cloud (Web-Services, Node.JS, TypeScript, React.JS, MSSQL, Swagger, Python, MQTT, …)</li>
+                        <li>Testautomatisierung (Cypress, JEST)</li>
+                        <li>CICD: Jenkins CI, Jira, Yaml, Gitlab, Confluence, PocketQuery (Aufbau, Administration, Integration, Scripting & Betrieb), AzureDevOps Pipelines</li>
+                        <li>IOS Software Entwicklung (Swift)</li>
+                        <li>Microsoft (C#, PowerShell, Azure, VBScript)</li>
+                        <li>Java Software-Entwicklung (Android, WebSockets, JSP, Struts, Hibernate)</li>
+                        <li>Java Script Entwicklung (SAP UI5, JavaScript, SAP FIORI, AngularJS, Node.JS, e.g )</li>
+                        <li>Linux & MacOS Shell Entwicklung</li>
+                        <li>E-Government Lösungen (SuisseID, ePass, secure - verifiable e-Mail)</li>
+                        <li>Public-Key-Infrastructure Lösungen auf Basis von X.509-Zertifikaten</li>
+                        <li>Single-Sign-On-Lösungen (SAML, X.509, …)</li>
+                        <li>EAI Lösungen: TIBCO BusinessWorks, Apache ActiveMQ Clustering, Fuse ESB, Apache MQ, Microsoft BizTalk Server</li>
+                        <li>SAP Enterprise Portal / SAP NetWeaver Portal, SAP Enterprise Services (ABAP), SAP oData Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Fach- und Methodenkompetenz</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Identitätsmanagement</li>
+                        <li>Informationssicherheit</li>
+                        <li>IT-Architektur</li>
+                        <li>Big Data</li>
+                        <li>Anforderungsmanagement</li>
+                        <li>Auditor</li>
+                        <li>Authentifizierung</li>
+                        <li>kontinuierliche Integration</li>
+                        <li>Risikomanagement</li>
+                        <li>Testautomatisierung</li>
+                        <li>Testspezifikationen</li>
+                        <li>Business-Analyse</li>
+                        <li>Releasemanagement</li>
+                        <li>Agile Softwareentwicklung</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Sprachen</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Deutsch ●●●●</li>
+                        <li>Englisch ●●●○</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Ausbildung</div>
+                <div class="section-content">
+                    <ul>
+                        <li>HES-SO Valais-Wallis Diplom, Wirtschaftsinformatik 2006–2007</li>
+                        <li>Hochschule Karlsruhe (HKA) / University of Applied Sciences Bachelor of Applied Science (B.A.Sc.), Wirtschaftsinformatik 2003–2007</li>
+                        <li>Aktivitäten und Verbände: Fachschaft & Vorstand AStA Studiengang Wirtschaftsinformatik</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Hobbies</div>
+                <div class="section-content">
+                    <p>I enjoy paragliding, photography, hiking, and camping. I love to combine these activities. On rainy days, I work on IT projects like iOS programming or setting up a Raspberry Pi as a failover router via LTE.</p>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <p>© 2024 Your Name</p>
+            <p>&copy; Tobias Grossmann</p>
         </div>
     </div>
 </body>
